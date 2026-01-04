@@ -42,13 +42,113 @@
                 HorizontalOptions="Center">
 
                 <Label 
-                    Text="Coordinator menu"
+                    Text="Runner management"
                     HorizontalOptions="Center"
                     FontSize="32"/>
-
-                <HorizontalStackLayout
-                    Spacing="50">
+                <HorizontalStackLayout 
+                    WidthRequest="700">
+                    <VerticalStackLayout
+                        WidthRequest="300">
+                        <Label
+                            Text="Sort and filter"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"/>
+                        <HorizontalStackLayout
+                            HorizontalOptions="End"
+                            Margin="0, 0, 100, 0"
+                            Spacing="10">
+                            <Label
+                                Text="Status:"/>
+                            <Picker
+                            x:Name="StatusPicker"
+                                WidthRequest="100"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout
+                            HorizontalOptions="End"
+                            Margin="0, 0, 100, 0"
+                            Spacing="10">
+                            <Label
+                                Text="Race event:"/>
+                            <Picker
+                            x:Name="EventTypePicker"
+                                WidthRequest="100"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout
+                            HorizontalOptions="End"
+                            Margin="0, 0, 100, 0"
+                            Spacing="10">
+                            <Label
+                                Text="Sort by:"/>
+                            <Picker
+                            x:Name="SortingPicker"
+                                WidthRequest="100"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                    <Button 
+                        Text="Refresh"
+                        Clicked="Refresh"
+                        WidthRequest="100"
+                        HeightRequest="50"
+                        Margin="25, 80, 25, 0"
+                        Style="{StaticResource ButtonBlue}"/>
+                    <VerticalStackLayout
+                        WidthRequest="200"
+                        Spacing="15">
+                        <Label
+                            Text="Export"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"/>
+                        <Button 
+                            Text="Runner details (CSV)"
+                            Clicked="ExportRunnerDetails"
+                            Style="{StaticResource ButtonYellow}" />
+                        <Button 
+                            Text="Email address list"
+                            Clicked="ShowMailAddressList"
+                            Style="{StaticResource ButtonYellow}" />
+                    </VerticalStackLayout>
                 </HorizontalStackLayout>
+                <HorizontalStackLayout
+                        HorizontalOptions="Center">
+                    <Label
+                    HorizontalTextAlignment="Center"
+                        Text="Total runners:"/>
+                    <Label
+                        x:Name="TotalRunnersLabel"/>
+                </HorizontalStackLayout>
+
+                <Grid 
+                    ColumnDefinitions="*, *, 2*, 2*, *"
+                    RowDefinitions="*, *"
+                    x:Name="ResultsGrid">
+                    <Label
+                        FontAttributes="Bold"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="First Name"/>
+                    <Label
+                        FontAttributes="Bold"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Text="Last Name"/>
+                    <Label
+                        FontAttributes="Bold"
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        Text="Email"/>
+                    <Label
+                        FontAttributes="Bold"
+                        Grid.Column="3"
+                        Grid.Row="0"
+                        Text="Status"/>
+                    <Button
+                        Text="Edit"
+                        IsVisible="False"
+                        Grid.Row="0"
+                        Grid.Column="4"/>
+                </Grid>
 
 
             </VerticalStackLayout>
