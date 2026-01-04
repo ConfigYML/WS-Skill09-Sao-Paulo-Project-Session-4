@@ -138,6 +138,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Session_4_Dennis_Hilfinger
 build_metadata.AdditionalFiles.TargetPath = MyRaceResultsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MyRaceResultsPage.xaml
 
+[C:/2_WorldSkills/Training/Sao_Paulo_2015/WS-Skill09-Sao-Paulo-Project-Session-4/Session-4-Dennis-Hilfinger/MySponsorshipPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Session_4_Dennis_Hilfinger.MySponsorshipPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MySponsorshipPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MySponsorshipPage.xaml
+
 [C:/2_WorldSkills/Training/Sao_Paulo_2015/WS-Skill09-Sao-Paulo-Project-Session-4/Session-4-Dennis-Hilfinger/RegisterEventPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Session_4_Dennis_Hilfinger.RegisterEventPage.xaml

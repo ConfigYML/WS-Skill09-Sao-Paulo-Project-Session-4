@@ -119,7 +119,8 @@ HorizontalOptions="Fill">
                          HeightRequest="30"
                          FontSize="16"
                          Style="{StaticResource ButtonBlue}"
-                         Clicked="Search"/>
+                         Clicked="Search"
+                                x:Name="SearchBtn"/>
                         </HorizontalStackLayout>
 
                     </Grid>

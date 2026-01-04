@@ -82,8 +82,11 @@ public partial class RunnerPage : ContentPage, IQueryAttributable
 
     public async void MySponsorship(object? sender, EventArgs e)
     {
-        await DisplayAlert("Work in progress", "This feature is not implemented yet", "Ok");
-        //await AppShell.Current.GoToAsync("MySponsorshipPage");
+        ShellNavigationQueryParameters userData = new ShellNavigationQueryParameters()
+        {
+            { "User", user }
+        };
+        await AppShell.Current.GoToAsync("MySponsorshipPage", userData);
     }
 
     public async void ContactInformation(object? sender, EventArgs e)

@@ -56,6 +56,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Charities\arise_logo.png" />
+	  <None Remove="Resources\Images\Charities\aves_do_brazil_logo.png" />
+	  <None Remove="Resources\Images\Charities\clara_santos_oliveira_institute_logo.png" />
+	  <None Remove="Resources\Images\Charities\conquer_cancer_brazil.png" />
+	  <None Remove="Resources\Images\Charities\diabetes_brazil_logo.png" />
+	  <None Remove="Resources\Images\Charities\heart_health_sao_paulo_logo.png" />
+	  <None Remove="Resources\Images\Charities\human_rights_centre_logo.png" />
+	  <None Remove="Resources\Images\Charities\oxfam_international_logo.png" />
+	  <None Remove="Resources\Images\Charities\querstadtein_logo.png" />
+	  <None Remove="Resources\Images\Charities\save_the_children_fund_logo.png" />
+	  <None Remove="Resources\Images\Charities\stay_pumped_logo.png" />
+	  <None Remove="Resources\Images\Charities\the_red_cross_logo.png" />
+	  <None Remove="Resources\Images\Charities\upbeat_logo.png" />
+	  <None Remove="Resources\Images\Charities\wwsm_rescue_logo.png" />
 	  <None Remove="Resources\Images\length-images\distance\airbus_a380.jpg" />
 	  <None Remove="Resources\Images\length-images\distance\bus.jpg" />
 	  <None Remove="Resources\Images\length-images\distance\football_field.jpg" />
@@ -82,6 +96,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Charities\arise_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\aves_do_brazil_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\clara_santos_oliveira_institute_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\conquer_cancer_brazil.png" />
+	  <MauiImage Include="Resources\Images\Charities\diabetes_brazil_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\heart_health_sao_paulo_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\human_rights_centre_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\oxfam_international_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\querstadtein_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\save_the_children_fund_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\stay_pumped_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\the_red_cross_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\upbeat_logo.png" />
+	  <MauiImage Include="Resources\Images\Charities\wwsm_rescue_logo.png" />
 	  <MauiImage Include="Resources\Images\length-images\distance\airbus_a380.jpg" />
 	  <MauiImage Include="Resources\Images\length-images\distance\bus.jpg" />
 	  <MauiImage Include="Resources\Images\length-images\distance\football_field.jpg" />
@@ -162,6 +190,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MyRaceResultsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MySponsorshipPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="RegisterEventPage.xaml">

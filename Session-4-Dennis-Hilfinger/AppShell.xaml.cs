@@ -23,6 +23,7 @@
             Routing.RegisterRoute(nameof(AboutMarathonSkillsPage), typeof(AboutMarathonSkillsPage));
             Routing.RegisterRoute(nameof(InteractiveMapPage), typeof(InteractiveMapPage));
             Routing.RegisterRoute(nameof(MarathonLengthPage), typeof(MarathonLengthPage));
+            Routing.RegisterRoute(nameof(MySponsorshipPage), typeof(MySponsorshipPage));
         }
     }
 }
