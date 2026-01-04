@@ -38,8 +38,11 @@ public partial class CoordinatorPage : ContentPage, IQueryAttributable
 
     public async void Runners(object? sender, EventArgs e)
     {
-        await DisplayAlert("Work in progress", "This feature is not implemented yet", "Ok");
-        //AppShell.Current.GoToAsync("//RunnersPage");
+        ShellNavigationQueryParameters userData = new ShellNavigationQueryParameters()
+        {
+            { "User", user }
+        };
+        await AppShell.Current.GoToAsync("RunnerManagementPage", userData);
     }
 
     public async void Sponsorship(object? sender, EventArgs e)

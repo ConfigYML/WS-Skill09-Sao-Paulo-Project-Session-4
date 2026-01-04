@@ -51,39 +51,48 @@
             HorizontalOptions="Center">
 
                     <VerticalStackLayout 
-                WidthRequest="250"
+                WidthRequest="500"
                 Spacing="10" 
                 Padding="25">
                         <Label
-                            Text="Name of the charity" />
+                            Text="Name of the charity"
+                            FontAttributes="Bold"
+                            FontSize="30" />
                         <Image
                             x:Name="CharityImg"
-                            />
+                            HeightRequest="300"
+                            WidthRequest="300"/>
                         <Label
-                            x:Name="CharityText" />
+                            x:Name="CharityText"/>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout 
                 Grid.Column="2"
-                WidthRequest="250"
-                Spacing="10" 
-                Padding="50">
+                WidthRequest="500"
+                Spacing="10"
+                        Padding="25">
 
                         <Grid
                             x:Name="SponsorGrid"
                             ColumnDefinitions="2*, *"
-                            RowDefinitions="*, * ,*">
-                            
-                        </Grid>
+                            RowDefinitions="*, *"
+                            VerticalOptions="Start"
+                            RowSpacing="10">
 
-                        <Label 
+                            <Label 
                             Text="Sponsor"
+                                FontAttributes="Bold"
+                                FontSize="28"
                             Grid.Row="0"
                             Grid.Column="0"/>
-                        <Label
+                            <Label
                             Text="Amount"
+                                FontAttributes="Bold"
+                                FontSize="28"
                             Grid.Row="0"
                             Grid.Column="1"/>
+                        </Grid>
+
                     </VerticalStackLayout>
 
                 </Grid>
