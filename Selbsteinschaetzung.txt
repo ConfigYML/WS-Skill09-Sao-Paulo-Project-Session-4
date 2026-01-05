@@ -1,1 +1,5 @@
 Sehr große Probleme mit dem Laden von Daten, daher auch sehr lange Zeit darüber. Vermutlich ist die entwickelte Lösung immer noch nicht korrekt, aber so funktioniert trotz langer Ladezeiten. Diese stammen aber hauptsächlich vom Hinzufügen der Daten. Ziemlich sicher ist das performanter möglich. Den PathPicker musste ich in Teilen nachschhauen, da ich auch hier auf Probleme gestoßen bin.
+
+Nach ein bisschen Code-Analyse mithilfe von KI im Nachhinein bin ich auf folgende Punkte gekommen, die ich in Zukunft verbessern sollte:
+- .ToList() beim EntityFramework erst nach Filterung, Sortierung, etc verwenden
+- CollectionView mit DataBinding anstelle von Grid für solche großen Datenmengen verwenden
